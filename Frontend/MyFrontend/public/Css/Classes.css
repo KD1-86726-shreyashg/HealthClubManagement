@@ -1,0 +1,25 @@
+/* // FitnessSchedule.css */
+
+.fitness-schedule {
+  background: linear-gradient(90deg, #f7b733, #fc4a1a);
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.header-content i {
+  color: #fff;
+}
+
+.schedule-table {
+  background: #fff;
+  color: #333;
+  border-radius: 8px;
+  padding: 10px;
+}

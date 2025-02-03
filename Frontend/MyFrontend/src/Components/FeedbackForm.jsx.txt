@@ -1,0 +1,98 @@
+import React, { useState } from "react";
+import './FeedbackForm.css';  // Importing the CSS for styling
+
+function FeedbackForm() {
+  const [formData, setFormData] = useState({
+    trainer: "",
+    stars: 0,
+    description: "",
+  });
+
+  const [submitted, setSubmitted] = useState(false);  // New state to track if the form has been submitted
+
+  // Handle form input change
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  // Handle star rating change
+  const handleStarChange = (star) => {
+    setFormData({
+      ...formData,
+      stars: star,  // Update the number of selected stars
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSubmitted(true);  // Mark the form as submitted
+    console.log(formData); // You can replace this with form submission logic
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <div>
+        <label htmlFor="trainer">Trainer:</label>
+        <select
+          name="trainer"
+          value={formData.trainer}
+          onChange={handleChange}
+        >
+          <option value="">Select a Trainer</option>
+          <option value="Trainer1">Trainer 1</option>
+          <option value="Trainer2">Trainer 2</option>
+          <option value="Trainer3">Trainer 3</option>
+          <option value="Trainer4">Trainer 4</option>
+          <option value="Trainer5">Trainer 5</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Rating:</label>
+        {/* Create stars based on the rating */}
+        {[1, 2, 3, 4, 5].map((star) => (
+          <span
+            key={star}
+            onClick={() => handleStarChange(star)} // When a star is clicked, update the rating
+            style={{
+              fontSize: "24px",
+              color: formData.stars >= star ? "#FFD700" : "#ccc", // Show gold if selected, else gray
+              cursor: "pointer",
+              transition: "color 0.3s",  // Smooth transition for color change
+            }}
+          >
+            ⭐
+          </span>
+        ))}
+      </div>
+
+      <div>
+        <label htmlFor="description">Description:</label>
+        <textarea
+          name="description"
+          value={formData.description}
+          onChange={handleChange}
+          placeholder="Enter your feedback"
+          rows="4"
+        ></textarea>
+      </div>
+
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+
+      {submitted && (
+        <div className="submission-message">
+          <p>Thank you for your feedback!</p>
+          <p>You voted {formData.stars} star{formData.stars !== 1 ? "s" : ""}.</p>
+        </div>
+      )}
+    </form>
+  );
+}
+
+export default FeedbackForm;

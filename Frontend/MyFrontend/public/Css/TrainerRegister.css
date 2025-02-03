@@ -1,0 +1,36 @@
+/* Form Hover Effect */
+.form-hover:hover {
+    background-color: rgba(245, 245, 245, 0.7); /* Slight light background */
+    transition: all 0.3s ease;
+  }
+  
+  /* Input hover effect */
+  .input-hover:hover,
+  .input-hover:focus {
+    border-color: #0d6efd !important; /* Bootstrap primary color */
+    box-shadow: 0 0 8px rgba(13, 110, 253, 0.5); /* Blue glow */
+  }
+  
+  /* Label hover effect */
+  .label-hover:hover {
+    color: #0d6efd; /* Change label text to primary blue */
+    font-weight: bold; /* Add emphasis */
+    transition: color 0.2s ease;
+  }
+  
+  /* Radio hover effect */
+  .radio-hover:hover {
+    background-color: rgba(13, 110, 253, 0.1); /* Light blue background */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px;
+    transition: all 0.2s ease;
+  }
+  
+  /* Button hover effect */
+  .btn-hover:hover {
+    background-color: #0b5ed7 !important; /* Darker blue */
+    color: #fff !important;
+    transform: scale(1.05); /* Slight zoom */
+    transition: all 0.2s ease;
+  }
+  
