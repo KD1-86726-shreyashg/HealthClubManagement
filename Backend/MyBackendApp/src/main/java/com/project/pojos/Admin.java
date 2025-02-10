@@ -3,7 +3,6 @@ package com.project.pojos;
 import java.util.Collection;
 import java.util.List;
 
-import org.hibernate.annotations.ColumnDefault;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -35,27 +34,26 @@ public class Admin extends BaseClass implements UserDetails {
 
 	@Enumerated(EnumType.STRING)
 	private Gender gender;
-	
-	@Column(columnDefinition = "varchar(10) DEFAULT 'ADMIN'" , nullable = false , insertable = false)
+
+	@Column(columnDefinition = "varchar(10) DEFAULT 'ADMIN'", nullable = false, insertable = false)
 	private String role;
 
-	@Column(columnDefinition = "varchar(10) DEFAULT 'ACTIVE'" , nullable = false , insertable = false)
+	@Column(columnDefinition = "varchar(10) DEFAULT 'ACTIVE'", nullable = false, insertable = false)
 	private String status;
 
-	
 	// for login authorization
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		// TODO Auto-generated method stub
 		return List.of(new SimpleGrantedAuthority(role));
 	}
-	
+
 	@Override
 	public String getPassword() {
 		// TODO Auto-generated method stub
 		return password;
 	}
-	
+
 	@Override
 	public String getUsername() {
 		// TODO Auto-generated method stub
