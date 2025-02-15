@@ -1,5 +1,5 @@
 {
-  "name": "healthclubmanagement",
+  "name": "react-gym",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,9 +12,9 @@
   "dependencies": {
     "axios": "^1.7.9",
     "react": "^18.3.1",
+    "react-bootstrap": "^2.10.8",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^7.1.3",
-    "react-toastify": "^11.0.3"
+    "react-router-dom": "^7.1.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
