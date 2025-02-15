@@ -20,9 +20,16 @@ import TrainerRegister from "./HomeComponent/TrainerRegister.jsx";
 import CrouselComponent from "./HomeComponent/CrouselComponent.jsx";
 import ForgotPassword from "./HomeComponent/ForgotPassword.jsx";
 import VerifyOtp from "./HomeComponent/VerifyOtp.jsx";
+
 import ResetPassword from "./HomeComponent/ResetPassword.jsx";
 import TrainerCards from "./HomeComponent/TrainerCards.jsx";
 import { BrowserRouter, Routes } from 'react-router-dom';
+
+import UserNavbar from "./UserComponent/UserNavbar.jsx";
+import Rating from "./UserComponent/Rating.jsx"
+import ClassCards from "./UserComponent/EnrollClasses.jsx";
+import UserProfileCard from "./UserComponent/UserProfileCard.jsx";
+import FeedbackForm from './UserComponent/FeedbackForm';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -61,6 +68,15 @@ createRoot(document.getElementById('root')).render(
 
         <Route path="reset-password" element={<ResetPassword />} />
         <Route path="trainer-cards" element={<TrainerCards />} />
+
+
+        
+        {/* ***************************** User Components  ************************************* */}
+        <Route path="enrollClasses" element={<ClassCards />} />
+        <Route path="feedback" element={<Feedback />} />
+        <Route path="rating" element={<Rating />} />
+        <Route path="userProfile" element={<UserProfileCard />} />
+
 
 
       </Routes>
