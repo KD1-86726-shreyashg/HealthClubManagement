@@ -31,6 +31,27 @@ import ClassCards from "./UserComponent/EnrollClasses.jsx";
 import UserProfileCard from "./UserComponent/UserProfileCard.jsx";
 import FeedbackForm from "./UserComponent/FeedbackForm";
 
+import TrainersTable from "./AdminComponent/TrainersTable.jsx";
+import FeedbackList from "./AdminComponent/FeedbackList.jsx";
+import RatingList from "./AdminComponent/RatingList.jsx";
+import TrainersData from "./AdminComponent/TrainersTable.jsx";
+import UsersTable from "./AdminComponent/UserTable.jsx";
+import AdminNavbar from "./AdminComponent/AdminNavbar.jsx";
+import EditUserForm from "./AdminComponent/EditUserForm.jsx";
+import EditTrainerForm from "./AdminComponent/EditTrainerForm.jsx";
+
+import TrainerUserEditTable from "./TrainerComponent/TrainerUserEditTable.jsx";
+import TrainerProfileCard from "./TrainerComponent/TrainerProfileCard.jsx";
+import EditDietWorkoutForm from "./TrainerComponent/EditDietWorkoutForm.jsx";
+import TrainerNavbar from "./TrainerComponent/TrainerNavbar.jsx";
+import TrainersFeedback from "./TrainerComponent/TrainersFeedback.jsx";
+
+// Function to get role from sessionStorage
+const getRole = () => {
+  return sessionStorage.getItem("role"); // Assuming role is stored in sessionStorage
+};
+
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App />
