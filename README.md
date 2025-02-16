@@ -32,8 +32,10 @@ Installation
 
 1. Clone the Repository
 
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone [https://github.com/your-username/your-repo-name.git
+](https://github.com/kd1-86698-manishk/HealthClubManagement.git
+
+cd HealthClubManagement
 
 2. Install Dependencies
 
