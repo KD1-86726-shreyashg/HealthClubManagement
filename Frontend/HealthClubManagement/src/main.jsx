@@ -23,13 +23,13 @@ import VerifyOtp from "./HomeComponent/VerifyOtp.jsx";
 
 import ResetPassword from "./HomeComponent/ResetPassword.jsx";
 import TrainerCards from "./HomeComponent/TrainerCards.jsx";
-import { BrowserRouter, Routes } from "react-router-dom";
 
 import UserNavbar from "./UserComponent/UserNavbar.jsx";
 import Rating from "./UserComponent/Rating.jsx";
 import ClassCards from "./UserComponent/EnrollClasses.jsx";
 import UserProfileCard from "./UserComponent/UserProfileCard.jsx";
 import FeedbackForm from "./UserComponent/FeedbackForm";
+import Feedback from "./UserComponent/FeedbackForm.jsx";
 
 import TrainersTable from "./AdminComponent/TrainersTable.jsx";
 import FeedbackList from "./AdminComponent/FeedbackList.jsx";
