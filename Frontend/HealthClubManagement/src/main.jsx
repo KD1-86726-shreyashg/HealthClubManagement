@@ -46,6 +46,11 @@ import EditDietWorkoutForm from "./TrainerComponent/EditDietWorkoutForm.jsx";
 import TrainerNavbar from "./TrainerComponent/TrainerNavbar.jsx";
 import TrainersFeedback from "./TrainerComponent/TrainersFeedback.jsx";
 
+// Function to get role from sessionStorage
+const getRole = () => {
+  return sessionStorage.getItem("role"); // Assuming role is stored in sessionStorage
+};
+
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
