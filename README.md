@@ -3,7 +3,8 @@ Health Club Management System
 
 Overview
 
-This is a React-based Health Club Management System that helps manage users, bookings, and other functionalities efficiently. The project uses Bootstrap, SweetAlert2, and React Icons for UI enhancements.
+This is a React-based Health Club Management System that helps manage users, Trainer, and other functionalities efficiently. 
+The project uses Bootstrap, SweetAlert2, and React Icons for UI enhancements.
 
 Table of Contents
 	•	Demo
@@ -22,8 +23,8 @@ Demo
 Features
 
 ✔ User Registration & Authentication
-✔ Booking & Scheduling Management
 ✔ Admin Dashboard
+✔ Trainer Dashboard
 ✔ Notification System (SweetAlert2)
 ✔ Responsive UI (Bootstrap)
 
@@ -77,9 +78,5 @@ Contributing
 	3.	Commit your changes (git commit -m "Add feature")
 	4.	Push to the branch (git push origin feature-name)
 	5.	Create a Pull Request
-
-License
-
-(Mention the appropriate license, e.g., MIT, Apache-2.0, etc.)
 
 Let me know if you need modifications!
